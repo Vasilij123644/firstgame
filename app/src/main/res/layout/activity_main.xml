@@ -20,25 +20,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="321dp"
-        android:layout_height="229dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/c876b2784ea91d67c295b774415bf8a5" />
-
     <Button
         android:id="@+id/buttonPlay"
         android:layout_width="180dp"
         android:layout_height="60dp"
         android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/purple_500"
         android:text="Play"
-        android:textSize="18sp"
-        android:backgroundTint="#085F46"
         android:textColor="#fefefe"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -48,11 +38,11 @@
         android:layout_width="180dp"
         android:layout_height="60dp"
         android:layout_marginBottom="24dp"
-        android:text="HighScore"
-        android:backgroundTint="#085F46"
-        android:textSize="18sp"
-        android:textColor="#fefefe"
+        android:backgroundTint="@color/purple_500"
         android:onClick="HighScore"
+        android:text="HighScore"
+        android:textColor="#fefefe"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -62,12 +52,25 @@
         android:layout_width="180dp"
         android:layout_height="60dp"
         android:layout_marginBottom="32dp"
-        android:text="Quit"
+        android:backgroundTint="@color/purple_500"
         android:onClick="Quit"
-        android:backgroundTint="#085F46"
-        android:textSize="18sp"
+        android:text="Quit"
         android:textColor="#fefefe"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="188dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.245"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
 </androidx.constraintlayout.widget.ConstraintLayout>
